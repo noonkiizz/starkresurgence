@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "es2020",
+    "target": "es2020",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "types": ["vite/client", "jest"],
+    "paths": {
+      "~entity/*": ["./src/game/scenes/world/entities/*"],
+      "~scene/*": ["./src/game/scenes/*"],
+      "~game/*": ["./src/game/*"],
+      "~game": ["./src/game"],
+      "~type/*": ["./src/types/*"],
+      "~const/*": ["./src/const/*"],
+      "~lib/*": ["./src/lib/*"]
+    }
+  },
+  "exclude": [
+    "./src/**/__tests__/**",
+    "./src/**/__mocks__/**"
+  ]
+}
